@@ -1,4 +1,5 @@
 # MyMusicApp
+An app that get a playlist from the Spotify API and let the user to mark them as favourites.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
