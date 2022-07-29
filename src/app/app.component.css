@@ -1,1 +1,17 @@
-/*# sourceMappingURL=app.component.css.map */
+* {
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #36386b #ffffff;
+  /* Chrome, Edge, and Safari */
+}
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #36386b;
+  border-radius: 10px;
+  border: 3px solid #000;
+}/*# sourceMappingURL=app.component.css.map */

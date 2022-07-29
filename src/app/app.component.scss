@@ -1,0 +1,39 @@
+$header-color: #36386B;
+$header-font-color: #fff;
+$scroll-bar-bg: #36386b;
+$body-bg: linear-gradient(163.28deg, #121527 33.34%, #36386B 96.08%);
+$padding-h__item: 12px;
+$desktop: 600px;
+$join__btn: linear-gradient(100.32deg, #0F7828 51.9%, #8FF809 116.45%);
+$favorite-color: #ffd20b;
+$favorite-color-hover: #000;
+$non-favorite-color: #181a22;
+$non-favorite-color-hover: #ac0606;
+
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scrollbar-width: auto;
+    scrollbar-color: $scroll-bar-bg #ffffff;
+    
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 16px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #000;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $scroll-bar-bg;
+        border-radius: 10px;
+        border: 3px solid #000;
+    }
+}

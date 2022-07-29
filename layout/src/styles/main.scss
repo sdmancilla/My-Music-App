@@ -10,34 +10,35 @@ $favorite-color-hover: #000;
 $non-favorite-color: #181a22;
 $non-favorite-color-hover: #ac0606;
 
-// ---------------------------- HOME----------------------------
 
 @mixin desktop {
-  @media (min-width: $desktop) {
-    @content;
-  }
+    @media (min-width: $desktop) {
+        @content;
+    }
 }
 
 * {
     font-family: 'Poppins', sans-serif;
     scrollbar-width: auto;
     scrollbar-color: $scroll-bar-bg #ffffff;
-
+    
     /* Chrome, Edge, and Safari */
     &::-webkit-scrollbar {
         width: 16px;
     }
-
+    
     &::-webkit-scrollbar-track {
         background: #000;
     }
-
+    
     &::-webkit-scrollbar-thumb {
         background-color: $scroll-bar-bg;
         border-radius: 10px;
         border: 3px solid #000;
     }
 }
+
+// ---------------------------- HOME----------------------------
 
 .body {
     box-sizing: border-box;

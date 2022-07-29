@@ -1,0 +1,26 @@
+ATOMS
+    img -> src | alt
+    text -> inner_text
+    title -> text
+    title2 -> text
+    title3 -> text
+
+MOLECULES
+    aditional-info -> text | text
+    card-section -> can be two (?) fst and snd section
+    figure -> img
+    join-btn -> text
+
+ORGANISMS
+    card -> card-section | card-section
+    header -> figure | title | p | figure | figure - Can be just one header
+    header-landing -> figure | title
+
+TEMPLATES
+    main -> text | card*
+    main-landing -> figure | join-btn
+
+PAGES
+    landing -> header-landing | main-landing
+    home -> header | main
+    favorites -> header | main
