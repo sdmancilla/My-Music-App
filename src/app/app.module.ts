@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PagesModule } from './components/pages/pages.module';
 
+import { MoleculesModule } from './components/UI/molecules/molecules.module';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { PagesModule } from './components/pages/pages.module';
   ],
   imports: [
     BrowserModule,
-    PagesModule
+    PagesModule,
+    MoleculesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

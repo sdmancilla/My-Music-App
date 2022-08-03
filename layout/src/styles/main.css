@@ -39,6 +39,10 @@
   height: 40px;
   margin: 0;
 }
+.logo__figure :hover {
+  fill: #18d860;
+  transition: 0.1s;
+}
 
 .header__url {
   width: 0 0;
@@ -88,6 +92,11 @@
 .username__text {
   font-style: normal;
   font-weight: 300;
+}
+
+.other-pages__figure:hover, .logo__figure:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
 .main-section__home {
@@ -141,10 +150,11 @@
     position: relative;
     z-index: 2;
   }
-  .song-list__item:hover > .song-list__item__component .fav-action__figure .fav-action__img {
+  .song-list__item:hover .svg__path {
     fill: #000;
+    transition: fill 0.2s ease-in-out;
   }
-  .song-list__item:hover > .song-list__item__component .song__figure .song__img {
+  .song-list__item:hover .song__img {
     transition: 0.5s;
     transform: scale(1.2, 1.2);
   }
@@ -246,10 +256,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   transition: fill 0.2s ease-in-out;
+}
+.song-list__item .svg__path {
   fill: #181a22;
 }
-.song-list__item .fav-action__img .svg__path:hover {
-  cursor: pointer;
+.song-list__item .svg__path:hover {
   transition: 0.2s;
   fill: #ffd20b;
 }
@@ -318,14 +329,13 @@
 }
 
 @media (min-width: 600px) {
-  .song-list__item.favorite:hover > .song-list__item__component .fav-action__figure .fav-action__img {
+  .song-list__item.favorite:hover .svg__path {
     fill: #ac0606;
   }
 }
-.fav-action__figure.favorite .svg__path:hover {
-  fill: #181a22;
-}
-
-.fav-action__img.favorite {
+.song-list__item.favorite .svg__path {
   fill: #ffd20b;
+}
+.song-list__item.favorite .svg__path:hover {
+  fill: #181a22;
 }/*# sourceMappingURL=main.css.map */

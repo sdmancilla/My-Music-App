@@ -12,4 +12,6 @@ export class JoinBtnComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  url: string = '';
+
 }

@@ -2,23 +2,22 @@ ATOMS
     img -> src | alt
     text -> inner_text
     title -> text
-    title2 -> text
-    title3 -> text
 
 MOLECULES
     aditional-info -> text | text
     card-section -> can be two (?) fst and snd section
     figure -> img
     join-btn -> text
+    icon -> ruta
 
 ORGANISMS
     card -> card-section | card-section
-    header -> figure | title | p | figure | figure - Can be just one header
-    header-landing -> figure | title
 
 TEMPLATES
+    header -> figure | title | p | figure | figure - Can be just one header
+    header-landing -> figure | title
     main -> text | card*
-    main-landing -> figure | join-btn
+    main-landing -> figure | join-btn //container-login
 
 PAGES
     landing -> header-landing | main-landing

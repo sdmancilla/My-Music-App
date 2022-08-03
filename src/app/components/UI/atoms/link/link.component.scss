@@ -1,0 +1,26 @@
+$join__btn: linear-gradient(100.32deg, #0F7828 51.9%, #8FF809 116.45%);
+
+.join__btn {
+    text-decoration: none;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background: $join__btn;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: .5s;
+    }
+
+    .join__txt {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #000;
+    }
+}

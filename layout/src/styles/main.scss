@@ -64,6 +64,10 @@ $non-favorite-color-hover: #ac0606;
     width: 40px;
     height: 40px;
     margin: 0;
+    :hover {
+        fill: #18d860;
+        transition: .1s;
+    }
 }
 
 .header__url {
@@ -112,6 +116,11 @@ $non-favorite-color-hover: #ac0606;
 .username__text {
     font-style: normal;
     font-weight: 300;
+}
+
+.other-pages__figure:hover, .logo__figure:hover {
+    transform: scale(1.1);
+    transition: .1s;
 }
 
 // MAIN
@@ -167,11 +176,12 @@ $non-favorite-color-hover: #ac0606;
             position: relative;
             z-index: 2;
 
-            &>.song-list__item__component .fav-action__figure .fav-action__img {
+            & .svg__path {
                 fill: $favorite-color-hover;
+                transition: fill 0.2s ease-in-out;
             }
 
-            &>.song-list__item__component .song__figure .song__img {
+            & .song__img {
                 transition: .5s;
                 transform: scale(1.2, 1.2);
             }
@@ -272,16 +282,16 @@ $non-favorite-color-hover: #ac0606;
         height: auto;
         object-fit: cover;
         transition: fill 0.2s ease-in-out;
-        fill: $non-favorite-color;
+    }
 
-        & .svg__path {
-            &:hover {
-                cursor: pointer;
-                transition: .2s;
-                fill: $favorite-color;
-            }
+    & .svg__path {
+        fill: $non-favorite-color;
+        &:hover {
+            transition: .2s;
+            fill: $favorite-color;
         }
     }
+
 }
 
 
@@ -356,20 +366,14 @@ $non-favorite-color-hover: #ac0606;
 // ---------------------------- FAVOURITES ----------------------------
 
 @include desktop() {
-    .song-list__item.favorite:hover >.song-list__item__component .fav-action__figure .fav-action__img {
+    .song-list__item.favorite:hover .svg__path {
         fill: $non-favorite-color-hover;
     }
-    
 }
 
-.fav-action__figure.favorite .svg__path {
-
+.song-list__item.favorite .svg__path {
+    fill: $favorite-color;
     &:hover {
         fill: $non-favorite-color;
     }
-
-}
-
-.fav-action__img.favorite {
-    fill: $favorite-color;
 }
