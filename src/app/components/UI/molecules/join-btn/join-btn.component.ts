@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-join-btn',
@@ -12,6 +12,6 @@ export class JoinBtnComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  url: string = '';
+  @Input() url: string = '';
 
 }

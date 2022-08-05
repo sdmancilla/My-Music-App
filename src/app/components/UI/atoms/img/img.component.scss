@@ -1,0 +1,26 @@
+$desktop: 600px;
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+.quaver-img__header {
+    width: 35px;
+    height: auto;
+    object-fit: cover;
+}
+
+.spotify-img__header {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.song__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

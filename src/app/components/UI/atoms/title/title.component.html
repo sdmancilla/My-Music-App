@@ -1,3 +1,6 @@
-<h1 *ngIf="type==h1"></h1>
-<h2 *ngIf="type==h2"></h2>
-<h3 *ngIf="type==h3"></h3>
+<h1 *ngIf="type=='h1'" [class]="class">{{text}}</h1>
+<h2 *ngIf="type=='h2'" [class]="class">{{text}}</h2>
+<h3 *ngIf="type=='h3'" [class]="class">{{text}}</h3>
+<h4 *ngIf="type=='h4'" [class]="class">{{text}}</h4>
+<h5 *ngIf="type=='h5'" [class]="class">{{text}}</h5>
+<h6 *ngIf="type=='h6'" [class]="class">{{text}}</h6>

@@ -1,0 +1,156 @@
+$desktop: 600px;
+$padding-h__item: 12px;
+$favorite-color: #ffd20b;
+$favorite-color-hover: #000;
+$non-favorite-color: #181a22;
+$non-favorite-color-hover: #80197c;
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+.song-list__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff2;
+    backdrop-filter: blur(10px);
+    padding: 10px $padding-h__item;
+    border-radius: 10px;
+
+    @include desktop() {
+        max-width: 300px;
+        flex-direction: column;
+        &:hover {
+            // cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+            position: relative;
+            z-index: 2;
+
+            & .svg__path {
+                fill: $favorite-color-hover;
+                transition: fill 0.2s ease-in-out;
+            }
+
+            & .song__figure {
+                margin-bottom: 5px;
+            }
+
+            & .song__img {
+                transition: .5s;
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+
+    &__component {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        & .song-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 5px;
+        }
+
+        @include desktop() {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    & .song__figure {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px 0 0;
+        border-radius: 10px;
+        overflow: hidden;
+        @include desktop() {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+    
+    & .song__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    & .song__name {
+        margin: 0px;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: start;
+        @include desktop() {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    & .song__info {
+        display: flex;
+        flex-direction: column;
+        @include desktop() {
+            width: 100%;
+        }
+    }
+
+    & .additional-info {
+        display: flex;
+        gap: 10px;
+        font-weight: 300;
+        @include desktop() {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1px;
+        }
+    }
+
+    & .fav-action__figure {
+        width: 25px;
+        height: 25px;
+        margin: 0;
+
+        @include desktop() {
+            position: absolute;
+            right: $padding-h__item;
+            bottom: 20px;
+        }
+    }
+
+    & .fav-action__img {
+        cursor: pointer;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        transition: fill 0.2s ease-in-out;
+    }
+
+    & .svg__path {
+        fill: $non-favorite-color;
+        &:hover {
+            transition: .2s;
+            fill: $favorite-color;
+        }
+    }
+
+}
+
+@include desktop() {
+    .song-list__item.favorite:hover .svg__path {
+        fill: $non-favorite-color-hover;
+    }
+}
+
+.song-list__item.favorite .svg__path {
+    fill: $favorite-color;
+    &:hover {
+        fill: $non-favorite-color;
+    }
+}

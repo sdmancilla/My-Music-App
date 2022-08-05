@@ -1,1 +1,11 @@
-<p>header-landing works!</p>
+<header class="header landing__header justify--center">
+    <app-figure
+        [class_fig]="'logo__figure'"
+        [class_img]="'quaver-img__header'"
+        [src]="'assets/music-solid.svg'"
+        [alt]="'quaver image'"
+    ></app-figure>
+    <div class="info__header">
+        <app-title [class]="'info__tag landing__text'" [type]="'h1'" [text]="'My Music App'"></app-title>
+    </div>
+</header>

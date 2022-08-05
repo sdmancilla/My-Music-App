@@ -1,1 +1,41 @@
-/*# sourceMappingURL=figure.component.css.map */
+.logo__figure {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.logo__figure:hover {
+  fill: #18d860;
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+.spotify__figure {
+  width: 123px;
+  height: auto;
+}
+
+.other-pages__figure {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}
+
+.other-pages__figure:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.song__figure {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  .song__figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}/*# sourceMappingURL=figure.component.css.map */

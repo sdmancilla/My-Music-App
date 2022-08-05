@@ -1,1 +1,21 @@
-/*# sourceMappingURL=img.component.css.map */
+.quaver-img__header {
+  width: 35px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.spotify-img__header {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.song__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=img.component.css.map */

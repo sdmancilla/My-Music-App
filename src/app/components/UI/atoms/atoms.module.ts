@@ -5,9 +5,13 @@ import { ImgComponent } from './img/img.component';
 import { TextComponent } from './text/text.component';
 import { TitleComponent } from './title/title.component';
 import { LinkComponent } from './link/link.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
+  imports: [
+    CommonModule,
+  ],
   declarations: [
     ImgComponent,
     TextComponent,

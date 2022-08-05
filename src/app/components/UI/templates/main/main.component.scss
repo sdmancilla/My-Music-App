@@ -1,0 +1,25 @@
+$desktop: 600px;
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+.songs-list__section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include desktop() {
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+.main-section__home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 17px;
+}

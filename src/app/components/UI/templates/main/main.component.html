@@ -1,1 +1,13 @@
-<p>main works!</p>
+<main class="main-section__home">
+    <app-title [class]="'playlist__name'" [type]="'h2'" [text]="playlist_name"></app-title>
+    <section class="songs-list__section" id="songs-list__section">
+        <app-card *ngFor="let song of play_list_data"
+            [favorite]="song.favorite"
+            [src_img]="song.src_img"
+            [song_name]="song.song_name"
+            [artist_name]="song.artist_name"
+            [album_name]="song.album_name"
+            [url_fav]="'#'"
+        ></app-card>
+    </section>
+</main>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-figure',
@@ -11,5 +11,11 @@ export class FigureComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() class_fig: string = '';
+  @Input() class_img: string = '';
+  @Input() alt: string = '';
+  @Input() src: string = '';
+  @Input() type_content: string = '';
 
 }

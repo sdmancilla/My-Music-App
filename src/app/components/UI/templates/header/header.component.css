@@ -1,1 +1,45 @@
-/*# sourceMappingURL=header.component.css.map */
+.header {
+  background-color: #36386B;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 70px;
+  color: #fff;
+}
+
+.main__home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__home .logo__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.other-pages__home {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  gap: 20px;
+}
+.other-pages__home .other-pages__figure {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}
+
+.spotify-img__header {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.spotify-img__header:hover {
+  fill: #18d860;
+  transition: 0.1s;
+}/*# sourceMappingURL=header.component.css.map */

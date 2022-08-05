@@ -1,0 +1,47 @@
+$header-color: #36386B;
+$header-font-color: #fff;
+$spotify-color: #18d860;
+
+.header {
+    background-color: $header-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 70px;
+    color: $header-font-color;
+}
+
+.main__home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & .logo__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.other-pages__home {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 20px;
+
+    & .other-pages__figure {
+        width: 25px;
+        height: 25px;
+        margin: 0;
+    }
+}
+
+.spotify-img__header {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    &:hover {
+        fill: $spotify-color;
+        transition: .1s;
+    }
+}

@@ -5,16 +5,19 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './components/pages/pages.module';
 
 import { MoleculesModule } from './components/UI/molecules/molecules.module';
-
+import { OrganismsModule } from './components/UI/organisms/organisms.module';
+import { TemplatesModule } from './components/UI/templates/templates.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     PagesModule,
-    MoleculesModule
+    MoleculesModule,
+    OrganismsModule,
+    TemplatesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

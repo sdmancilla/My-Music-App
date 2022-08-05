@@ -1,1 +1,8 @@
-/*# sourceMappingURL=main-landing.component.css.map */
+.main-section__landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+}/*# sourceMappingURL=main-landing.component.css.map */

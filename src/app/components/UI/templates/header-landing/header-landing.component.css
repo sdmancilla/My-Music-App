@@ -1,1 +1,15 @@
-/*# sourceMappingURL=header-landing.component.css.map */
+.header {
+  background-color: #36386B;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 70px;
+  color: #fff;
+}
+
+.landing__header {
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #000;
+}/*# sourceMappingURL=header-landing.component.css.map */

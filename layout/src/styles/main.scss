@@ -1,14 +1,21 @@
+$desktop: 600px;
+$padding-h__item: 12px;
 $header-color: #36386B;
 $header-font-color: #fff;
 $scroll-bar-bg: #36386b;
 $body-bg: linear-gradient(163.28deg, #121527 33.34%, #36386B 96.08%);
-$padding-h__item: 12px;
-$desktop: 600px;
 $join__btn: linear-gradient(100.32deg, #0F7828 51.9%, #8FF809 116.45%);
+
+$spotify-color: #18d860;
+$spotify-filter: brightness(0) saturate(100%) invert(70%) sepia(43%) saturate(1294%) hue-rotate(85deg) brightness(94%) contrast(86%);
 $favorite-color: #ffd20b;
+$favorite-filter: brightness(0) saturate(100%) invert(74%) sepia(96%) saturate(446%) hue-rotate(351deg) brightness(101%) contrast(101%);
 $favorite-color-hover: #000;
+$favorite-filter-hover: brightness(0) saturate(100%) invert(0%) sepia(94%) saturate(28%) hue-rotate(186deg) brightness(90%) contrast(100%);
 $non-favorite-color: #181a22;
+$non-favorite-filter: brightness(0) saturate(100%) invert(7%) sepia(25%) saturate(594%) hue-rotate(190deg) brightness(96%) contrast(94%);
 $non-favorite-color-hover: #ac0606;
+$non-favorite-filter-hover: brightness(0) saturate(100%) invert(11%) sepia(44%) saturate(7006%) hue-rotate(351deg) brightness(108%) contrast(110%);
 
 
 @mixin desktop {
@@ -65,7 +72,8 @@ $non-favorite-color-hover: #ac0606;
     height: 40px;
     margin: 0;
     :hover {
-        fill: #18d860;
+        fill: $spotify-color;
+        // filter: $spotify-filter;
         transition: .1s;
     }
 }
@@ -155,6 +163,7 @@ $non-favorite-color-hover: #ac0606;
         // justify-content: space-around;
         // gap: 5px;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
@@ -166,6 +175,7 @@ $non-favorite-color-hover: #ac0606;
     backdrop-filter: blur(10px);
     padding: 10px $padding-h__item;
     border-radius: 10px;
+    max-width: 200px;
 
     @include desktop() {
         flex-direction: column;
@@ -361,6 +371,8 @@ $non-favorite-color-hover: #ac0606;
         color: #000;
     }
 }
+
+
 
 
 // ---------------------------- FAVOURITES ----------------------------

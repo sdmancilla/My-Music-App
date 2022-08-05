@@ -1,1 +1,44 @@
-/*# sourceMappingURL=title.component.css.map */
+.info__tag {
+  margin: 0;
+}
+.info__tag.landing__text {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info__tag.landing__text {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.home__text {
+  font-size: 22px;
+}
+
+.song__name {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (min-width: 600px) {
+  .song__name {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.playlist__name {
+  margin: 0px 0px 30px 0px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (min-width: 600px) {
+  .playlist__name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+}/*# sourceMappingURL=title.component.css.map */

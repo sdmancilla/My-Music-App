@@ -1,1 +1,4 @@
-<p>figure works!</p>
+<figure [class]="class_fig">
+    <app-img *ngIf="type_content == ''" [class]="class_img" [src]="src" [alt]="alt"></app-img>
+    <ng-content [class]="class_img"></ng-content>
+</figure>

@@ -1,7 +1,35 @@
+$desktop: 600px;
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
 .join__txt {
     font-weight: 700;
     font-size: 25px;
     line-height: 38px;
     color: #000;
     z-index: 2;
+}
+
+.info__tag {
+    margin: 0;
+}
+
+.username__text {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.additional__detail{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.song__info-separator {
+    @include desktop() {
+        display: none;
+    }
 }

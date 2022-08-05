@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files *//*# sourceMappingURL=styles.css.map */
+* {
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #36386b #ffffff;
+  /* Chrome, Edge, and Safari */
+}
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #36386b;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+.body {
+  box-sizing: border-box;
+  background-color: #36386B;
+  min-width: 300px;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(163.28deg, #121527 33.34%, #36386B 96.08%);
+}/*# sourceMappingURL=styles.css.map */

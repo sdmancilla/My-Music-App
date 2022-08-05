@@ -7,6 +7,8 @@ import { MainLandingComponent } from './main-landing/main-landing.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderLandingComponent } from './header-landing/header-landing.component';
+import { MoleculesModule } from '../molecules/molecules.module';
+import { AtomsModule } from '../atoms/atoms.module';
 
 
 
@@ -19,10 +21,15 @@ import { HeaderLandingComponent } from './header-landing/header-landing.componen
   ],
   imports: [
     CommonModule,
-    OrganismsModule
+    AtomsModule,
+    MoleculesModule,
+    OrganismsModule,
   ],
   exports: [
-    
+    MainLandingComponent,
+    MainComponent,
+    HeaderComponent,
+    HeaderLandingComponent
   ]
 })
 export class TemplatesModule { }
