@@ -1,9 +1,12 @@
-<div class="body home">
+<div class="body favorite">
     <app-header
         [target]="'home'"
         [username]="user.username"
     ></app-header>
     <app-main
         [playlist_name]="playlist_name"
+        [song_list]="song_list"
     ></app-main>
 </div>
+<!-- <a routerLink="/landing" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a> -->
+<!-- <router-outlet></router-outlet> -->

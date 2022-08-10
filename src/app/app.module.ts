@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { PagesModule } from './components/pages/pages.module';
-
-import { MoleculesModule } from './components/UI/molecules/molecules.module';
-import { OrganismsModule } from './components/UI/organisms/organisms.module';
-import { TemplatesModule } from './components/UI/templates/templates.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +11,8 @@ import { TemplatesModule } from './components/UI/templates/templates.module';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     PagesModule,
-    MoleculesModule,
-    OrganismsModule,
-    TemplatesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

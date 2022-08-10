@@ -20,7 +20,7 @@ $non-favorite-color-hover: #80197c;
     border-radius: 10px;
 
     @include desktop() {
-        max-width: 300px;
+        max-width: 210px;
         flex-direction: column;
         &:hover {
             // cursor: pointer;
@@ -32,10 +32,6 @@ $non-favorite-color-hover: #80197c;
             & .svg__path {
                 fill: $favorite-color-hover;
                 transition: fill 0.2s ease-in-out;
-            }
-
-            & .song__figure {
-                margin-bottom: 5px;
             }
 
             & .song__img {
@@ -138,6 +134,12 @@ $non-favorite-color-hover: #80197c;
             transition: .2s;
             fill: $favorite-color;
         }
+    }
+
+    & .fav-action__link {
+        background: transparent;
+        padding: 0;
+        border: none;
     }
 
 }

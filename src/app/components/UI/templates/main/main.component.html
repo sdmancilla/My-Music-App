@@ -1,13 +1,16 @@
 <main class="main-section__home">
     <app-title [class]="'playlist__name'" [type]="'h2'" [text]="playlist_name"></app-title>
     <section class="songs-list__section" id="songs-list__section">
-        <app-card *ngFor="let song of play_list_data"
+        <app-card *ngFor="let song of song_list"
             [favorite]="song.favorite"
+            [id_song]="song.id_song"
             [src_img]="song.src_img"
             [song_name]="song.song_name"
             [artist_name]="song.artist_name"
             [album_name]="song.album_name"
             [url_fav]="'#'"
+            (onFavoriteId)="switchFavorite( $event )">
         ></app-card>
+        <div *ngFor="let n of numInsertSequence(); let i = index;"></div>
     </section>
 </main>

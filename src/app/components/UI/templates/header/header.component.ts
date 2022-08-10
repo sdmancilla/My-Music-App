@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     this.title = this.target === 'home' ? 'Home' : 'Favorites';
     this.src = this.target === 'home' ? 'assets/heart-solid.svg' : 'assets/house-solid.svg';
     this.alt = this.target === 'home' ? 'Home' : 'Favorites';
-    this.icon_url_redirect = this.target === 'home' ? './home' : './favorites';
+    this.icon_url_redirect = this.target === 'home' ? './favorites' : './home';
   }
 
 }

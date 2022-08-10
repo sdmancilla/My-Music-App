@@ -13,8 +13,12 @@ $desktop: 600px;
 
     @include desktop() {
         display: grid;
-        align-items: stretch;
+        justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        // justify-content: center;
     }
 }
 
